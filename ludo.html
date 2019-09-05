@@ -26,6 +26,13 @@ function dicegame(){
 	let play1dice="dice-"+play1+".png";
 	document.getElementById("check1").setAttribute('src', play1dice);
 	x=play1;
+	 setTimeout(function(){
+	 	roll.setAttribute("disabled","");
+	 	total.textContent=counter;
+	 },5000);
+
+
+
 }
 	 var count=document.getElementById("counter");
 	 var roll=document.getElementById("spin");
@@ -34,10 +41,10 @@ function dicegame(){
 	 	count.textContent=counter;
 	 	x=0;
 	 });
-	 setTimeout(function(){
-	 	roll.setAttribute("disabled","");
-	 	total.textContent=counter;
-	 },5000);
+	 // setTimeout(function(){
+	 // 	roll.setAttribute("disabled","");
+	 // 	total.textContent=counter;
+	 // },5000);
 
 
 
