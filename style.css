@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+	padding:0;
+
+	}
+	.center{
+	text-align: center;
+}
+
+	
+h1{
+	margin:30px;
+	text-shadow: 5px 0 white;
+	font-size: 6rem;
+	color:#000000;
+}
+h2{
+	margin:30px;
+	text-shadow: 5px 0 white;
+	font-size: 2rem;
+	color:#000000;
+}
+h3{
+	margin:30px;
+	text-shadow: 5px 0 white;
+	font-size: 2rem;
+	color:#000000;
+}
+.container{
+	 background: url("ludoimg3.jpg");
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center;
+                background-color:;
+}
+img{
+	opacity:1;
+	filter:alpha(opacity=50);
+	border:5px solid black;
+
+}

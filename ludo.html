@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LUDO</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	        <div class="container">
+	        <div id="header" align="center">
+	        	<h1>ROLL THE DICE!!</h1>
+	        	<h2>PLAYER 1<h2>
+	        		<h3>TOTAL SCORE:<span id="ts"></span></h3>
+	        </div>
+
+<div id="content"></div>
+<div class="center"><img src="dice-4.png" id="check1"></div>
+<div id="footer" align="center"></div>
+<div align="left"><h2>COUNTER:<span id="counter">0</span></h2></div>
+<div class="button" align="center"><button onclick="dicegame()" id="spin" style="vertical-align: middle" align="center">ROLL THE DICE</button></div>
+<script>
+	var x=0;
+	var counter=0;
+	var total=document.getElementById("ts");
+function dicegame(){
+	let play1=Math.floor(Math.random()*6)+1;
+	let play1dice="dice-"+play1+".png";
+	document.getElementById("check1").setAttribute('src', play1dice);
+	x=play1;
+}
+	 var count=document.getElementById("counter");
+	 var roll=document.getElementById("spin");
+	 roll.addEventListener("click",function(){
+	 	counter+=x;
+	 	count.textContent=counter;
+	 	x=0;
+	 });
+	 setTimeout(function(){
+	 	roll.setAttribute("disabled","");
+	 	total.textContent=counter;
+	 },5000);
+
+
+
+</script>
+
+
+</body>
+</html>
